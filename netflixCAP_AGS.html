@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetflixCAP_AGS</title>
 </head>
+
 <body>
     <h1>NetflixCAP_AGS</h1>
     <h4>Antonio García Sánchez</h4>
     <div>
-        <p><input type="text" placeholder="Introduce el título a buscar"></p>
-        <p><input type="button" value="BUSCAR"></p> 
+        <form action="" method="GET">
+            <p>Titulo <input type="text" id="titulo" placeholder="Introduce el título a buscar" required></p>
+            <p>Año <input type="text" id="year" placeholder="Introduce el año de la pelicula a buscar"></p>
+            <p><input type="button" id="buscar" value="BUSCAR"></p>
+        </form>
     </div>
     <div>
-        <span id="muestra"></span>
+        <span id="muestraImagen"></span>
     </div>
+    <div>
+        <span id="muestraTitulo"></span>
+    </div>
+    <div>
+        <span id="muestraYear"></span>
+    </div>
+    <div>
+        <span id="muestraEstreno"></span>
+    </div>
+    <div>
+        <span id="muestraActores"></span>
+    </div>
+    <div>
+        <span id="muestraGenero"></span>
+    </div>
+    <div>
+        <span id="muestraSinopsis"></span>
+    </div>
+    
+    
+
 </body>
+<script src="js/netflixCAP_AGS.js"></script>
+
 </html>
