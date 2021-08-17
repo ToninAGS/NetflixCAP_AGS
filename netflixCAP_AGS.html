@@ -13,12 +13,16 @@
     <h4>Antonio García Sánchez</h4>
     <div>
         <form action="" method="GET">
-            <p><input type="text" placeholder="Introduce el título a buscar" required></p>
-            <p><input type="button" value="BUSCAR"></p>
+            <p><input type="text" id="titulo" placeholder="Introduce el título a buscar" required></p>
+            <p><input type="text" id="year" placeholder="Introduce el año de la pelicula a buscar" required></p>
+            <p><input type="button" id="buscar" value="BUSCAR"></p>
         </form>
     </div>
     <div>
-        <span id="muestra"></span>
+        <span id="muestraTitulo"></span>
+    </div>
+    <div>
+        <span id="muestraImagen"></span>
     </div>
 </body>
 <script src="js/netflixCAP_AGS.js"></script>
