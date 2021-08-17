@@ -11,8 +11,8 @@ window.onload = function () {
         fetch(urlfinal)
             .then(data => data.json())
             .then(data => {
-                document.getElementById("muestraImagen").innerHTML= '<img src="'+ data.Poster +'" >';
-                document.getElementById("muestraTitulo").innerHTML ="Titulo: "+ data.Title;
+                document.getElementById("muestraImagen").innerHTML= '<img class="card-img-top" src="'+ data.Poster +'" alt="Card image cap" >';
+                document.getElementById("muestraTitulo").innerHTML =data.Title;
                 document.getElementById("muestraYear").innerHTML = "Año: "+ data.Year;
                 document.getElementById("muestraEstreno").innerHTML ="Estreno en salas: "+  data.Released;
                 document.getElementById("muestraActores").innerHTML ="Actores: "+  data.Actors;

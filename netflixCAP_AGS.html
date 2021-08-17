@@ -6,47 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title>NetflixCAP_AGS</title>
 </head>
 
 <body>
-    <h1>NetflixCAP_AGS</h1>
-    <h4>Antonio García Sánchez</h4>
-    <div>
-        <form action="" method="GET">
-            <p>Titulo <input type="text" id="titulo" placeholder="Introduce el título a buscar" required></p>
-            <p>Año <input type="text" id="year" placeholder="Introduce el año de la pelicula a buscar"></p>
-            <p><input type="button" id="buscar" value="BUSCAR"></p>
-        </form>
-    </div>
-    <div>
-        <span id="muestraImagen"></span>
-    </div>
-    <div>
-        <span id="muestraTitulo"></span>
-    </div>
-    <div>
-        <span id="muestraYear"></span>
-    </div>
-    <div>
-        <span id="muestraEstreno"></span>
-    </div>
-    <div>
-        <span id="muestraActores"></span>
-    </div>
-    <div>
-        <span id="muestraGenero"></span>
-    </div>
-    <div>
-        <span id="muestraSinopsis"></span>
-    </div>
-    
-    
+    <div class="container">
+        <div class="row">
+            <h1 class="display-1 text-center">NetflixCAP_AGS</h1>
+        </div>
+        <div class="row">
+            <h4 class="lead text-center">Antonio García Sánchez</h4>
+        </div>
+        <hr>
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    <label for="titulo">Ttulo de la película</label>
+                    <input type="text" id="titulo" class="form-control" placeholder="Introduce el título a buscar">
+                </div>
+                <div class="form-group">
+                    <label for="year">Año de estreno</label>
+                    <input type="text" class="form-control" id="year" placeholder="Introduce el año de estreno">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="button" id="buscar" class="btn btn-primary btn-lg" value="BUSCAR">
+                </div>
+            </form>
+        </div>
+        <br>
+        <!--         <div class="row">
+            <span id="muestraImagen"></span>
+        </div>
+        <div class="row ">
+            <span id="muestraTitulo"></span>
+        </div>
+        <div class="row ">
+            <span id="muestraYear"></span>
+        </div>
+        <div class="row">
+            <span id="muestraEstreno"></span>
+        </div>
+        <div class="row">
+            <span id="muestraActores"></span>
+        </div>
+        <div class="row">
+            <span id="muestraGenero"></span>
+        </div>
+        <div class="row">
+            <span id="muestraSinopsis"></span>
+        </div> -->
 
+        <div class="card text-center" style="width: 25rem; margin : auto;">
+            <span id="muestraImagen"></span>
+            <div class="card-body">
+                <h5 class="card-title"><span id="muestraTitulo"></span></h5>
+                <p class="card-text"><span id="muestraSinopsis"></span></p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span id="muestraYear"></span></li>
+                <li class="list-group-item"><span id="muestraEstreno"></span></li>
+                <li class="list-group-item"><span id="muestraActores"></span></li>
+                <li class="list-group-item"><span id="muestraGenero"></span></li>
+            </ul>
+        </div>
+        <br>
+        <br>
 </body>
 <!-- Local JS-->
 <script src="js/netflixCAP_AGS.js"></script>
 <!-- Bootstrap JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
 </html>
