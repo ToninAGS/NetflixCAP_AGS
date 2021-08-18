@@ -44,8 +44,10 @@ window.onload = function () {
             })
             .then(function (datos) {
                 let pelis = datos.Search;
+                console.log(datos.totalResults);
+                console.log(Math.ceil(datos.totalResults/10));
                 console.log(urlfinal);
-                console.log(pelis);
+                document.getElementById("resultado").innerHTML = `Se han encontrado ${datos.totalResults} películas con ese criterio de búsqueda`;
                 for (var p in pelis) {
                     //console.log(pelis[p].Title+" : "+pelis[p].Year+" : "+pelis[p].Released+" : "+pelis[p].Actors+" : "+pelis[p].Genre+" : "+pelis[p].Plot);
                     document.getElementById("muestra").innerHTML +=
@@ -57,7 +59,7 @@ window.onload = function () {
                                 <h5 class="text-center text-secondary">Año: ${pelis[p].Year}</h5>
                             </div>                        
                             <ul class="list-group list-group-flush">
-                                <a href="#" class="btn btn-seconday">Infomación</a>
+                            <!-- <a href="#" class="btn btn-seconday">Infomación</a>-->
                             </ul>
                         </div>                  
                     <br>

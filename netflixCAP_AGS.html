@@ -20,30 +20,28 @@
             <h4 class="lead text-center">Antonio García Sánchez</h4>
         </div>
         <hr>
-        <div class="row">
-            <form>
-                <div class="form-group">
-                    <label for="titulo">Ttulo de la película</label>
-                    <input type="text" id="titulo" class="form-control" placeholder="Introduce el título a buscar">
-                </div>
-                <br>
-                <div class="form-group">
-                    <input type="button" id="buscar" class="btn btn-primary btn-lg" value="BUSCAR">
-                </div>
-            </form>
+        <form class="row g-10 justify-content-center">
+            <div class="col-8">
+                <input type="text" id="titulo" class="form-control" placeholder="Introduce el título a buscar">
+            </div>
+            <div class="col-2">
+                <input type="button" id="buscar" class="btn btn-primary mb-3" value="BUSCAR">
+            </div>
+        </form>
+        <br>
+        <div class="row lead justify-content-center" id="resultado">            
         </div>
         <br>
-
         <div class="row" id="muestra">
         </div>
         <br>
         <br>
-        <nav aria-label="Page navigation example" class="text-center">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" id="before">Previous</a></li>
-              <li class="page-item"><a class="page-link" id="next">Next</a></li>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-lg justify-content-center">
+                <li class="page-item"><a class="page-link btn" id="before">Previous</a></li>
+                <li class="page-item"><a class="page-link btn" id="next">Next</a></li>
             </ul>
-          </nav>
+        </nav>
 </body>
 <!-- Local JS-->
 <script src="js/netflixCAP_AGS.js"></script>
