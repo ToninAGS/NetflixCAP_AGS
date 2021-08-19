@@ -59,40 +59,37 @@ window.onload = function () {
                     fetch(url2)
                         .then(peli => peli.json())
                         .then(peli => {
-                            document.getElementById("muestra").innerHTML +=
-                                ` 
-                                <div class="col-4">
-                                <div class="row">
-                                    <div class="card deck">
-                                        <img class="card-img-top img-thumbnail" src="${peli.Poster}" type="button" alt="..." data-toggle="modal"
-                                            data-target="#${peli.imdbID}">
+                            document.getElementById("muestra").innerHTML +=` 
+                            <div class="col" style="padding:0.5rem;">
+                                <div class="">
+                                    <div class="">
+                                        <img class="card-img-top" style="width: 18rem;" src="${peli.Poster}" type="button" alt="..."
+                                            data-toggle="modal" data-target="#${peli.imdbID}">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="modal fade" id="${peli.imdbID}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">                            
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="card">
-                                             <img src="${peli.Poster}" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h3 class="card-title text-center">${peli.Title}</h3>
-                                                    <p class="card-text">${peli.Plot}</p>
-                                                    <p class="card-text"><span class="font-weight-bold">Año:</span> ${peli.Year}</p>                                                    
-                                                    <p class="card-text"><span class="font-weight-bold">Estreno en salas:</span> ${peli.Released}</p>                                                    
-                                                    <p class="card-text"><span class="font-weight-bold">Actores:</span> ${peli.Actors}</p>                                                    
-                                                    <p class="card-text"><span class="font-weight-bold">Genero:</span> ${peli.Genre}</p>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <div class="modal fade" id="${peli.imdbID}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="card">
+                                            <img src="${peli.Poster}" class="card-img-top " alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">${peli.Title}</h3>
+                                                <p class="card-text">${peli.Plot}</p>
+                                                <p class="card-text"><span class="font-weight-bold">Año:</span> ${peli.Year}</p>
+                                                <p class="card-text"><span class="font-weight-bold">Estreno en salas:</span> ${peli.Released}
+                                                </p>
+                                                <p class="card-text"><span class="font-weight-bold">Actores:</span> ${peli.Actors}</p>
+                                                <p class="card-text"><span class="font-weight-bold">Genero:</span> ${peli.Genre}</p>
                                             </div>
                                         </div>
-                                    </div>                            
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                            <br>
+                        <br>
                             `;
                         });
                 }

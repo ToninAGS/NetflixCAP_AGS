@@ -12,20 +12,23 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <h1 class="display-1 text-center">NetflixCAP_AGS</h1>
-        </div>
-        <div class="row">
-            <h4 class="lead  text-center">Antonio García Sánchez</h4>
-        </div>
-        <hr>
-        <form class="row g-10 justify-content-center">
-            <div class="col-8">
+    <div class="container-fluid">
+            <div class="sticky-top navbar-danger bg-danger" style="background: url('https://cdn.pixabay.com/photo/2016/01/16/20/40/texture-1143944_1280.jpg') repeat center center; width: 100%; height: auto; ">
+                <div class="flex-row d-flex justify-content-center text-black">
+                    <h1 class="display-1 text-center col">NetflixCAP_AGS</h1>
+                </div>
+                <div class="flex-row d-flex text-black">
+                    <h4 class="lead  text-center col">Antonio García Sánchez</h4>
+                </div>
+                <hr>
+            </div>
+        
+        <form class="flex-row d-flex justify-content-center">
+            <div class="col-7">
                 <input type="text" id="titulo" class="form-control" placeholder="Introduce el título a buscar">
             </div>
-            <div class="col-2">
-                <input type="button" id="buscar" class="btn btn-primary mb-3" value="BUSCAR">
+            <div class="col-1">
+                <input type="button" id="buscar" class="btn mb-3 border border-dark" style="background-color:#D5E8E4;" value="BUSCAR">
             </div>
         </form>
         <br>
@@ -33,14 +36,17 @@
         <div class="row lead justify-content-center" id="resultado">
         </div>
         <br>
-        <div class="row" id="muestra">
+        <div class="container">
+            <div class="row" id="muestra">
+            </div>
         </div>
         <br>
         <br>
         <nav aria-label="Page navigation example">
             <ul class="pagination pagination-lg justify-content-around">
-                <button type="button" class="btn btn-lg btn-primary" id="before" disabled >Previous</button>                
-                <button type="button" class="btn btn-primary btn-lg" id="next" disabled>Next</button>
+                <button type="button" class="btn btn-lg border border-dark" style="background-color:#D5E8E4; "id="before" disabled>Previous</button>
+                <a href="#" type="button" class="btn btn-lg border border-dark" style="background-color:#F8F6E2;" id="">IR ARRIBA</a>
+                <button type="button" class="btn btn-lg border border-dark" style="background-color:#D5E8E4; "id="next" disabled>Next</button>
             </ul>
         </nav>
     </div>
@@ -56,5 +62,4 @@
     crossorigin="anonymous"></script>
 
 </html>
-<p>
 
